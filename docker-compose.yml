@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  #backend build
+  backend:
+    build: .
+    image: cs56022218/dailyfix-backend:latest
+    environment:
+      PORT: ${PORT}
+      MONGODB_URI: ${MONGODB_URI}
+    container_name: dailyfix-backend
+    restart: always
+    ports:
+      - 5000:5000
+
+
