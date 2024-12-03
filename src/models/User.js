@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema(
       unique: true,
       lowercase: true,
     },
-    // password: {
+    // password: { //ใช้ของ fireauth
     //   type: String,
     //   required: true,
     // },
