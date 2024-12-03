@@ -1,12 +1,11 @@
 import express from "express";
-import cors from "cors"; // นำเข้า cors
+import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import dailyReportRoutes from "./src/routes/dailyReportRoutes.js";
 import userRoutes from "./src/routes/userRoutes.js";
 import issueRoutes from "./src/routes/issueRoutes.js";
-dotenv.config(); // โหลดค่า environment variables จาก .env
-
+dotenv.config();
 const app = express();
 
 // เปิดใช้ CORS
